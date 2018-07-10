@@ -33,10 +33,10 @@ spring:
         schema: classpath:/sql/schema.sql
         url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
-        initialization-mode: always
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
         hibernate:
-            ddl-auto: none
+            ddl-auto: update
         show-sql: true
+        database: oauth
